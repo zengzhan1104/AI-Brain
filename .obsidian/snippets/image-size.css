@@ -1,0 +1,9 @@
+/* 让新插入的图片默认宽度为 1200px，高度自适应 */
+img {
+    max-width: 1200px !important;       /* 最大宽度限制为 800px，超出则缩小 */
+    width: auto !important;            /* 宽度自适应，不超过 max-width */
+    height: auto !important;           /* 高度自适应，防止变形 */
+    display: block !important;         /* 关键：让图片变成块级元素，以支持 margin auto 居中 */
+    margin-left: auto !important;      /* 关键：左右外边距自动，实现居中 */
+    margin-right: auto !important;     /* 关键：左右外边距自动，实现居中 */
+}

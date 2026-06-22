@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#000000",
+  "theme": "moonstone",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "image-size",
+    "table-center"
+  ]
+}

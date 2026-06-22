@@ -1,0 +1,32 @@
+/* 表格单元格文本上下左右居中 */
+
+/* === 阅读视图 === */
+.markdown-rendered table :is(th, td) {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* === 实时预览编辑视图 === */
+/* .table-cell-wrapper 本身居中 */
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper {
+  text-align: center !important;
+  vertical-align: middle !important;
+  display: table-cell !important;
+}
+
+/* .table-cell-wrapper 内部所有子元素也居中 */
+.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper * {
+  text-align: center !important;
+}
+
+/* === 表格内项目符号保持左对齐（覆盖上面的全部居中） === */
+.table-cell-wrapper ul,
+.table-cell-wrapper ol,
+.table-cell-wrapper ul *,
+.table-cell-wrapper ol *,
+td ul,
+td ol,
+td ul *,
+td ol * {
+  text-align: left !important;
+}

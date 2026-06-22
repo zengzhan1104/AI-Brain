@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(E:/Knowledge/**)",
+      "Edit(E:/Knowledge/**)",
+      "Write(E:/Knowledge/**)",
+      "Glob(E:/Knowledge/**)",
+      "Grep(E:/Knowledge/**)",
+
+      "Bash(python3 *)",
+      "Bash(python *)",
+
+      "Bash(xxd *)",
+      "Bash(file *)",
+      "Bash(head *)",
+      "Bash(sed *)",
+      "Bash(cat *)",
+      "Bash(ls *)",
+
+      "Bash(pdftotext *)",
+
+      "Bash(cp /tmp/*)",
+      "Bash(rm /tmp/*)",
+      "Read(//tmp/**)",
+
+      "WebSearch",
+      "WebFetch",
+      "Agent"
+    ]
+  }
+}

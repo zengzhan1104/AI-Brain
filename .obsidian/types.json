@@ -1,0 +1,10 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "tags1": "datetime",
+    "aliases1": "date",
+    "报道时间": "date"
+  }
+}

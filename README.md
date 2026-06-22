@@ -17,7 +17,7 @@
 | **MinerU**（可选） | PDF → Markdown 转换（VLM 引擎） | https://github.com/opendatalab/MinerU |
 | **Zotero**（可选） | 文献管理，配合 zotero-import 导入论文 | https://www.zotero.org |
 
-> **MinerU 安装说明**：从 [MinerU GitHub Releases](https://github.com/opendatalab/MinerU/releases) 下载最新版本。安装后需根据实际路径修改 `.claude/skills/mineru-convert/SKILL.md` 和 `batch_convert.py` 中的 `C:/MinerU/` 路径。MinerU 依赖 CUDA 和 VLM 模型，配置方法详见其官方文档。
+> **MinerU 安装说明**：从 [MinerU GitHub](https://github.com/opendatalab/MinerU) 克隆并安装。安装后需根据实际路径修改 `.claude/skills/mineru-convert/SKILL.md` 和 `batch_convert.py` 中的 `C:/MinerU/` 路径。MinerU 依赖 CUDA 和 VLM 模型，配置方法详见其官方文档。
 
 ## 快速上手
 
@@ -40,7 +40,7 @@
 
 在 `Knowledge/` 目录下启动 Claude Code。**首次使用前需修改以下路径**：
 
-**` .claude/settings.json`** — 将权限路径从 `E:/Knowledge/**` 改为你的 vault 实际路径：
+**`.claude/settings.json`** — 将权限路径从 `E:/Knowledge/**` 改为你的 vault 实际路径：
 ```json
 "Read(<你的路径>/**)",
 "Edit(<你的路径>/**)",
@@ -49,7 +49,7 @@
 "Grep(<你的路径>/**)",
 ```
 
-**（可选）` .claude/settings.local.json`** — 如需本地路径覆盖（如 MinerU Python 解释器路径），新建此文件。
+**（可选）`.claude/settings.local.json`** — 如需本地路径覆盖（如 MinerU Python 解释器路径），新建此文件。
 
 ### 3. 填写研究纲领
 

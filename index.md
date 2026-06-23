@@ -1,29 +1,343 @@
 # Knowledge Vault — 统一索引
 
-> 最后更新：{{当前日期}}
+> 最后更新：2026-06-23（ingest: Zhang & Jia 2026 R134a 歧管微通道流动沸腾三结构对比）
 
 ## 子库
 
-> 待填充 — 使用 `/new-sublib <子库名>` 创建子库后，子库条目自动出现在此处
+- [[主动冷却综述/CLAUDE|主动冷却综述]] — 主动冷却综述（电子器件热管理、微通道散热、射流冲击、相变冷却等电子冷却技术）
+- [[系统级微流道/CLAUDE|系统级微流道]] — 系统级微流道散热（LTCC 嵌入式微流道设计与优化）
+- [[电力电子综述/CLAUDE|电力电子综述]] — 电力电子热管理、封装散热、器件可靠性
+- [[陶瓷焊接微流道/CLAUDE|陶瓷焊接微流道]] — 陶瓷焊接微流道
+- [[多层共烧陶瓷微流道/CLAUDE|多层共烧陶瓷微流道]] — 多层共烧陶瓷微流道
+- [[功率模块封装/CLAUDE|功率模块封装]] — 功率模块封装
+- [[CPO/CLAUDE|CPO]] — CPO
+- [[HPC封装/CLAUDE|HPC封装]] — HPC封装
+- [[RF封装/CLAUDE|RF封装]] — RF封装
+- [[片上微流道/CLAUDE|片上微流道]] — 片上微流道
 
 ## Sources
 
-> 待填充 — 使用 `/ingest` 摄入论文后，精读条目自动出现在此处
+### 主动冷却综述
+
+- [[主动冷却综述/wiki/sources/2013 - Thermal and hydrodynamic analysis of microchannel heat sinks]] — 69 篇微通道热沉文献的 8 维系统化综述，揭示 1995–2013 方法论从实验/解析到数值+进化算法的演变
+- [[主动冷却综述/wiki/sources/2015 - Review of micro- and mini-channel heat sinks and heat exchangers for single phase fluids]] — 微/小通道散热器与换热器的双轨综述，系统呈现经典理论适用性争议全景，归纳四大领域空白
+- [[主动冷却综述/wiki/sources/2017 - A critical review of traditional and emerging techniques and fluids for electronics cooling]] — 电子冷却技术与冷却液的双轨综述，聚焦纳米流体的 $k$/$h$/CHF 数据全景与真实系统应用
+- [[主动冷却综述/wiki/sources/2018 - Overview of micro-channel design for high heat flux application]] — MCHS 几何设计（六类）、冷却工质、两相流沸腾与跨领域应用的全景综述，含 >30 篇文献的设计-性能对照表
+- [[主动冷却综述/wiki/sources/2021 - A review on flow boiling enhancement and fabrication of enhanced microchannels of microchannel heat sinks]] — 增强微通道流沸腾四类结构与七种制造方法的首个制造视角综述，含 >200 篇文献的结构-性能-制造全景对比
+- [[主动冷却综述/wiki/sources/2020 - Effect of a micro heat sink geometric design on thermo-hydraulic performance]] — MCHS 几何设计三维修综述（图案/截面/歧管），以统一 PEC 实现跨研究公平对比，并首次对标商用产品
+- [[主动冷却综述/wiki/sources/2021 - A Review On Transient Thermal Management of Electronic Devices]] — 以热响应时间 τr 统合五种瞬态冷却技术的跨技术比较，建立系统级 R-C 选型框架
+- [[主动冷却综述/wiki/sources/2022 - Heat transfer augmentation in microchannel heat sink using secondary flows A review]] — 覆盖>300篇文献的几何改性→二次流→PEC 叙事框架综述，涵盖波浪形/蛇形/锯齿形/渐扩-渐缩/斜翅片/横向/双层/分形等全部构型的热工水力对比
+- [[主动冷却综述/wiki/sources/2022 - Fluid flow and heat transfer in microchannel heat sinks Modelling review and recent progress]] — 首篇从数值方法角度系统综述 MCHS 的综述，覆盖 CFD/LBM/MDS/DSMC/Taguchi/GA/ANN 七类方法的适用尺度范围和优劣势对比
+- [[主动冷却综述/wiki/sources/2023 - An overview of heat transfer enhancement methods in microchannel heat sinks]] — 首次以四维度（结构/内嵌强化/表面处理/材料类型）平行框架综述MCHS强化传热，重点覆盖金刚石MCHS制造与性能
+- [[主动冷却综述/wiki/sources/2023 - Design modifications in micro pin fin configuration of microchannel heat sink for single phase liquid flow A review]] — 首篇专门聚焦单相液冷 MPFHS 几何设计参数的综述，按形状→密度→排列→尺寸→尖端间隙→关联式五段式递进，给出 7 条设计准则
+- [[主动冷却综述/wiki/sources/2023 - Review of jet impingement cooling of electronic devices Emerging role of surface engineering]] — 首篇从表面工程视角系统综述 JI 冷却的论文，建立六类表面工程策略（粗糙化/涂层/纳米颗粒沸腾/光刻/激光蚀刻/润湿性图案化）分类框架
+- [[主动冷却综述/wiki/sources/2023 - Review on performance enhancement of phase change material based heat sinks in conjugation with thermal conductivity enhancers for electronic cooling]] — 系统综述三类热导增强体（翅片/纳米颗粒/金属泡沫）对 PCM 热沉瞬态热性能的影响，给出关键设计参数最优取值（$\Phi=9\%$、纳米颗粒 ≤2 wt%、$\varepsilon=0.95$）
+- [[主动冷却综述/wiki/sources/2024 - A comprehensive review on microchannel heat sinks for electronics cooling]] — 全维度（结构→工质→相变→材料→其他因素→增强技术）MCHS 综述，涵盖拓扑优化、非牛顿流体、嵌入式冷却等新兴方向，给出 12 项关键参数跨论文对比汇总
+- [[主动冷却综述/wiki/sources/2025 - Immersion liquid cooling for electronics Materials, systems, applications and prospects]] — 首篇"冷却液→结构→增强→应用"全链路浸没冷却综述，覆盖 150+ 篇文献，系统比较四类浸没冷却构型与冷却液分类体系
+- [[主动冷却综述/wiki/sources/2026 - A brief review of two-phase thermal management strategies for high heat-flux electronics]] — 以"驱动力-蒸发器"双轴框架综述自驱动→泵驱两相冷却的技术演进，聚焦压电微泵与逆流歧管微通道的协同，引用 159 篇
+- [[主动冷却综述/wiki/sources/2026 - Beyond Conventional Cooling Advanced Micro Nanostructures for Managing Extreme Heat Flux]] — 首篇以"靶向热管理"统一框架综述微纳结构在导热/对流/相变/辐射四机制下操纵热流的综述，覆盖热超材料、流体力学超材料、NTR 等新兴方向
+- [[主动冷却综述/wiki/sources/2026 - Fabrication of microchannel heat sinks using additive manufacturing A review]] — 以材料-工艺-结构-性能四维框架系统综述 AM-MCHS 2009–2025 发展全景，覆盖五类材料、七种 AM 路线和三种设计方法，提供路线-构型映射与能力-可行性决策表
+- [[主动冷却综述/wiki/sources/2026 - Microchannel cooling for high-performance microelectronic systems Progress, challenges, and future directions]] — 工质→微通道构型→基底材料→评价指标四维批判性综述（WoS 4454篇筛选218篇），核心论点：拓扑优化歧管微通道+金刚石基底+先进工质应对>10000 W/cm²极端热流，AI驱动实时热管理为关键方向
+- [[主动冷却综述/wiki/sources/2026 - Recent advances for thermal management of electronic devices A state-of-the-art review]] — 电子器件热管理散热器的传统与新兴冷却技术全景综述（~257 篇），首次以传统 vs. 新兴二元框架对比 11 类技术路线，给出跨技术性能·成本·可行性·环保性横向对比
+- [[主动冷却综述/wiki/sources/2026 - Research progress of the application of microchannels, bionic structures and nanofluids in the thermal management of electronic components]] — 以"结构优化→仿生设计→纳米流体→协同集成"递进逻辑综述 MCHS 三大增强路径，核心论断为仿生结构与纳米流体的协同可在传热-压降-温均性三者间实现最优平衡
+
+### 系统级微流道
+
+- [[系统级微流道/wiki/sources/2017 - 电子器件冷却用散热器的结构形式与研究进展]] — 综述了电子器件冷却用散热器的四种常用结构形式和研究进展，确认微通道散热是解决高热流密度的前沿方向但压降是核心瓶颈
+- [[系统级微流道/wiki/sources/2019 - Microembossed copper microchannel heat sink for high‐density cooling in electronics]] — 提出钨模具热铜微压印制造工艺，实验 $h=6492\ \mathrm{W/(m^2 \cdot K)}$ @50 W/cm$^2$，高功率芯片达 304.8 W/cm$^2$
+- [[系统级微流道/wiki/sources/2020 - Heat transfer enhancement, entropy generation and temperature uniformity analyses of shark-skin bionic modified microchannel heat sink]] — 鲨鱼皮仿生微结构（四种构型 A/B/C/D）降阻强化换热，TP=1.1–3.1，低 Re 最优 Model B，高 Re 最优 Model C
+- [[系统级微流道/wiki/sources/2020 - Machine Learning for Fluid Mechanics]] — ML 在流体力学中建模/优化/控制的全景综述，提出物理信息嵌入→物理一致性的递进路线图
+- [[系统级微流道/wiki/sources/2020 - Pool boiling enhancement of novel interconnected microchannels with reentrant cavities for high-power electronics cooling]] — 互连微通道+凹入腔复合结构池沸腾强化，$HTC_{max}=72.5\ \mathrm{kW/(m^2 \cdot K)}$，$q''$ 达 1637.63 kW/m$^2$ 未达 CHF
+- [[系统级微流道/wiki/sources/2021 - Forced convection cooling of additively manufactured single and double layer enhanced microchannels]] — DMLS 增材制造单层/双层微通道+斜向二次流道，DL-OMC 最优 THP=1.58（比基线高 ~60%）
+- [[系统级微流道/wiki/sources/2021 - The experimental study of the heat transfer performance of a zigzag-serpentine microchannel heat sink]] — 蛇形歧管(19入口/20出口)+zigzag换热通道(24条)的功能分层ZSMHS实验，30° 时换热最优+流阻最低同时达成
+- [[系统级微流道/wiki/sources/2022 - Active Thermal Management of GaN-on-SiC HEMT With Embedded Microfluidic Cooling]] — SiC 衬底嵌入式微流道冷却 GaN HEMT，热阻降 76%
+- [[系统级微流道/wiki/sources/2022 - All laser-based fabrication of microchannel heat sink]] — 四种激光工艺全串联<2h制造微流道散热器，CHF=55.2 W/cm$^2$
+- [[系统级微流道/wiki/sources/2022 - Numerical study on heat transfer and flow characteristics of novel microchannel heat sinks]] — 三种仿 Tesla 阀微通道同等换热面积+PEC 双重标准化对比，MCSB 扇形凸块最优
+- [[系统级微流道/wiki/sources/2022 - Thermal management system for high, dense, and compact power electronics]] — 提出四分区多分叉微通道热沉+各向异性TIM热路由策略
+- [[系统级微流道/wiki/sources/2022 - Thermal property evaluation of a 2.5D integration method with device level microchannel direct cooling for a high-power GaN HEMT device]] — 提出 2.5D 集成微通道直冷架构，栅指区 32.8 kW/cm² 散热
+- [[系统级微流道/wiki/sources/2023 - 用于高密度集成微系统的微通道散热技术研究进展]] — 综述微通道散热器传热传质表征体系、结构设计空间与纳米流体强化
+- [[系统级微流道/wiki/sources/2023 - Hotspot thermal management of silicon-based high power hetero-integration]] — 提出 CDMC 硅中介层解决 GaN MMIC 热点冷却，芯片热流 >545 W/cm²
+- [[系统级微流道/wiki/sources/2024 - Analysis of thermohydraulic performance in periodic groove–rib microchannels based on field synergy principle]] — 四种周期沟-肋复合微通道的场协同分析，梯形 R-Tra 最优 PEC=1.51
+- [[系统级微流道/wiki/sources/2024 - High-quality fabrication of diamond straight microchannels heat sink with large aspect ratio microchannels using UV nanosecond laser based on multi-feed method]] — UV 纳秒激光多馈给策略在 PDC 上制备高宽比 8:1 金刚石直微通道热沉
+- [[系统级微流道/wiki/sources/2024 - Near-Junction Thermal Management of GaN-on-SiC MMIC Power Amplifier Through Substrate Embedded Microchannel]] — SiC 衬底微通道使 MMIC PA 热阻降 43.14%、饱和电流+22.32%
+- [[系统级微流道/wiki/sources/2024 - Novel design and thermal-dynamic analysis on impact-jet nested double-layer microchannel heat sinks with streaming block]] — SLM 3D打印冲击射流嵌套双层微通道+导流块，PEC=1.5807
+- [[系统级微流道/wiki/sources/2024 - Numerical simulation on the heat sink with interrupted microchannels regarding of heat transfer enhancement]] — 顺排与交错中断微通道对比，交错型 PEC=1.23 优于顺排 1.10
+- [[系统级微流道/wiki/sources/2025 - 基于遗传算法的碳化硅功率模块直接液冷散热结构优化研究]] — 提出 NSGA-II+COMSOL 热-流协同多目标优化方法，Pin-Fin 优化后热阻降 4.5%/热不均匀性降 69.0%，歧管微通道 CSPI 提升 15.6% 并实验验证
+- [[系统级微流道/wiki/sources/2025 - Advancing cooling limits with 3D embedded microchannels]] — News & Views 评述：三层集成 3D 嵌入式微通道实现 3000 W/cm² 单相散热
+- [[系统级微流道/wiki/sources/2025 - Constructal design of a composite heatsink with microchannels and arrow-shaped inner fins based on entransy theory]] — 火积理论与构形理论结合用于箭头形内翅片复合微通道参数化优化
+- [[系统级微流道/wiki/sources/2025 - Direct-on-chip two-phase jet impingement cooling of multichip packages- Distributed inlet-outlet nozzles]] — 首次在真实 GPU 芯片布局上实现串联分布式两相射流冲击冷却，系统总散热 612.8 W
+- [[系统级微流道/wiki/sources/2025 - Dual-layer cylindrical array of pin–fin microchannels with heat dissipation capacity up to 1200 W-cm2]] — 双层交叉流圆柱针肋MHS以去离子水实现1200 W/cm²散热
+- [[系统级微流道/wiki/sources/2025 - Embedded Microchannel DPC Ceramic Substrates for Enhanced LED Thermal Management]] — 室温电镀键合集成S形铜管到DPC陶瓷基板，LED模块降温80.71%
+- [[系统级微流道/wiki/sources/2025 - Enhancement of thermo-hydraulic performance in MPF heat sink through perforations fabricated using micro-EDM drilling]] — 微EDM钻孔在微柱翅上加工双穿孔，$Nu$ +48.3% + $\Delta P$ −11.8%
+- [[系统级微流道/wiki/sources/2025 - Fluid flow and heat transfer characteristics of manifold microchannel heat sinks with ribs of different shapes]] — 首次系统研究五种肋形在歧管 MCHS 中的热-流特性，椭圆肋综合热增强效率最优
+- [[系统级微流道/wiki/sources/2025 - Heat transfer and pressure drop characteristics of microchannel cold plate in commercial CPU-package cooling system]] — 首次基于商用 CPU 完整建模 CPcCPU，提出阶梯式多层微通道切除策略
+- [[系统级微流道/wiki/sources/2025 - Heat transfer enhancement of intermittent pulsating flow in Tesla-valve channel cold plates]] — 首次在Tesla阀通道冷板中施加间歇脉动流，Nu最大提升69.6%
+- [[系统级微流道/wiki/sources/2025 - Heat transfer performance of inlet-outlet manifold configurations and bottom wall cavities composite in microchannel heat sinks]] — 首次系统组合 3 种歧管配置+6 种底壁腔体结构，I型歧管+方形波底壁最优
+- [[系统级微流道/wiki/sources/2025 - High-efficient cooling from a counter-flow microchannel heat sink with sinusoidal wave walls for high-performance electronic devices]] — 逆流正弦波壁微通道实现305 W/cm²散热、HTC 64.2 kW/(m²·K)
+- [[系统级微流道/wiki/sources/2025 - Improvement of IGBT cooling using modified micro-channel heat sinks]] — 首次在商业IGBT模块真实热传导路径下系统比较四种pin-fin几何+四种盖板配置
+- [[系统级微流道/wiki/sources/2025 - Integrated Metal-Lidded Microfluidic Cooling on a High-Power AI Chip Using Confined Two-Phase Liquid Jet With Dielectric Fluid R1233zd(E)]] — 首次在真实 NVIDIA V100 GPU 上实现 3D 打印金属歧管 + 介电流体受限两相液束射流直接芯片冷却
+- [[系统级微流道/wiki/sources/2025 - Investigation on liquid-cooled heat sink integrating topology optimization and microchannel design for high heat flux chip cooling]] — 首次将拓扑优化结构与直微通道集成，降温 4.28 K 同时压降反降 319.42 Pa
+- [[系统级微流道/wiki/sources/2025 - Micrometer-scale composite pin-fin diamond microchannel heat sink for near-10-kilowatt-level chip thermal management]] — 腰形+圆柱+翼型复合针翅金刚石 MHS 近结冷却，散热极限推至 7300 W/cm$^2$
+- [[系统级微流道/wiki/sources/2025 - Multi-Layer Microchannel Cooling for Large-Area High-Power Electronics]] — 提出 MC+M1+M2 三层微通道液冷架构，>6 kW/100 cm$^2$ 散热
+- [[系统级微流道/wiki/sources/2025 - Numerical simulation of thermal performance of radial manifold microchannel heat sink for electronics thermal management]] — 提出径向歧管微通道弯曲歧管替代直线Z型歧管，Dean涡旋流增强换热
+- [[系统级微流道/wiki/sources/2025 - Optimizing chip thermal management performance in microchannel heat sinks driven by the synergistic effect of liquid cooling and phase change materials]] — 提出PCM瞬态储热+微通道强制对流的跨时间尺度协同散热策略
+- [[系统级微流道/wiki/sources/2025 - Study on the Characteristics of Sandwich Cooling Energy Storage Li-Ion Battery Pack with Manifold Channel Cooling Plates]] — 提出MC三明治冷却结构用于储能锂电池组
+- [[系统级微流道/wiki/sources/2025 - Synergistic thermo-hydraulic optimization of embedded microchannels- Balancing chip cooling efficiency and pressure fluctuation resistance]] — 提出翼型腔扰流子+二次通道嵌入式微通道 EMAT-SC，PEC=1.50
+- [[系统级微流道/wiki/sources/2025 - The influence of inlet and outlet Tesla valve restrictor on microchannel flow boiling characteristics under localized ultra-high heat flux]] — 首次将 Tesla 阀用作微通道进出口限流器，CHF 提升 124.6%
+- [[系统级微流道/wiki/sources/2025 - Thermal-dynamic study on the novel designed double-layer impinging jet microchannel heat sinks with horizontal and inclined fins verified by additive manufacturing technology]] — 提出夹板功能化策略：水平+倾斜翅片镜像对称交替排列替代传统双层微通道夹板
+- [[系统级微流道/wiki/sources/2025 - 单相液冷微通道散热器结构研究进展]] — 系统梳理六大类微通道结构，以 ψ 为统一标尺横向对比14种构型并分析9种基体材料与9种加工工艺成本
+- [[系统级微流道/wiki/sources/2026 - A comprehensive analysis of flow and heat transfer performance in a novel Tesla valve microchannel]] — 首次对Tesla阀微通道进行四级递进式系统优化（级数→阀芯形状→结构参数→排布方式），EVC-R PEC较矩形翅片提升20.23%，ISA排布最优
+- [[系统级微流道/wiki/sources/2026 - Anisotropic gradient porous fins for microchannel heat sinks- A new paradigm in thermal management design]] — 首次将方向性渗透率各向异性与空间梯度 Darcy 数组合应用于微通道多孔翅片，步降渗透率构型热阻降 76.84%、综合性能 Ω 提升 3594.71%
+- [[系统级微流道/wiki/sources/2026 - An experimental study on the performance of an indirect water-cooled battery cooling system for energy storage system using a micro channel heat exchanger]] — 系统级实验对比间接液冷 ESS 中微通道与冷却板换热器性能，液冷相对风冷平均温降 ~17°C、SOH 衰减从 4.4% 降至 1.7%
+- [[系统级微流道/wiki/sources/2026 - A novel hybrid staggered arrangement petal-shaped pin-fin microchannel heat sink for hotspot mitigation]] — 提出花瓣形柱鳍错排混合微通道（HSAPP6），热点区 T_max 较 SPMC 降 23.1 K、R_th 降 50.3%、PEC=1.380，等冷却准则下泵功仅为 HCP 的 29%
+- [[系统级微流道/wiki/sources/2026 - Co-packaged electronics with microfluidics for direct-to-package cooling]] — 提出直接到封装(D2P)微流道冷却——三层铜基板嵌入蛇形微通道，~625 W/cm² 耗散仅需 2–4 mL 冷却液，COP > 10³–10⁴，$Nu_{eff-G} > 10$
+- [[系统级微流道/wiki/sources/2026 - Comparative study on flow and heat transfer characteristics of four array rib micro-jet heat sinks based on chip cooling]] — 系统对比四种阵列肋微射流热沉的流动与传热，方头肋传热最优（$Nu_{max}=51.73$），波浪肋能效最高（$EER=734.9$），综合排序 case4 > case1 > case3 > case2
+- [[系统级微流道/wiki/sources/2026 - Data-driven multi-fidelity topology design for enhancing the cooling performance of embedded liquid-cooled microchannels]] — 数据驱动多保真拓扑优化框架（VAE 64D + NSGA-II），PEC 相对传统矩形针肋提升 56%，拓扑结构阻力仅为传统 1/3
+- [[系统级微流道/wiki/sources/2026 - Design and intelligent optimization of TSV-based embedded microchannel heatsinks in 2.5D Packaging]] — 提出 T-MCHS（TSV 嵌入微通道壁面），ANN 代理模型 + NSGA-II 双目标优化，Nu 提升 72% 而泵功仅增 0.09 mW
+- [[系统级微流道/wiki/sources/2026 - Diamond-Cu composites microchannel heat sink for effective thermal management of SiC power devices]] — W涂层+真空退火界面工程（807 W/m·K）+AgCuTi主动钎焊集成Cu微通道，SiC模块200W结温降低12.3°C
+- [[系统级微流道/wiki/sources/2026 - Effect of Channel Configuration on Transient Behavior of Mini-channel Heat Sink]] — 首次系统对比直通道/strip-fin/pin-fin 在余弦瞬态热流下的热响应：strip-fin 低流速温度最低，pin-fin 时间常数最小但压降为直通道 12.6 倍
+- [[系统级微流道/wiki/sources/2026 - Electrochemical additive manufacturing-based cold plate with distributed inlet nozzles and outlet slots for high-power-density electronics cooling]] — 提出 DINOS-CP（分布式汇聚入口喷嘴+发散出口槽+微柱翅冷板）由 ECAM 纯铜打印，1000W 实验中比传统 skived-fin 冷板热阻降 8%、压降降 34%、泵功降 60%、温均性改善 35%
+- [[系统级微流道/wiki/sources/2026 - Enabling record-high heat flux in wide-bandgap electronics via in-chip microfluidic cooling on diamond substrates]] — 在多晶金刚石衬底上集成 MMC 近结冷却，薄膜加热器模拟有源区，单相水冷实现背景 4099 W/cm²、热点 73.5 kW/cm²、总热阻 0.019 cm²·K/W（均为全文献最佳）
+- [[系统级微流道/wiki/sources/2026 - Enhancing Thermal Uniformity in Liquid-Cooled Inverters- Adjoint-Based Optimization of a Manifold Microchannel Coldplate]] — 首次将伴随形状优化应用于歧管微通道冷板，实验验证仅靠歧管流量均化即可将多芯片 ΔT_max 从 3.7°C 降至 ~1°C，泵功降 3.4-9.9%，证明流量分配不均是多芯片热不均匀性的主导因素
+- [[系统级微流道/wiki/sources/2026 - Experimental and numerical investigation of single-phase flow and heat transfer characteristics in counter-flow manifold microchannel heat sink]] — 提出逆流歧管微通道 CFMMC：四进四出歧管+分流板（80个交错孔）实现二次分配和局部逆流，压降比 PFMMC 低 ~23%、h_ave 高 24.4%，极端工况承受 300 W/cm²（PFMMC 仅 175 W/cm²），首次在歧管构型中同时实现低压降和高换热
+- [[系统级微流道/wiki/sources/2026 - Experimental investigation of R134a flow boiling in high-power and high-heat-flux manifold microchannels heat sinks with varying internal structures]] — 在 25 cm² 大面积 MMC 上系统对比三种微通道层结构（SP-MCs/SI-MCs/PI-MCs）的 R134a 流动沸腾，SI-MCs 以横向互联实现最优综合性能（106 W/cm² CHF、最低压降、最高 COP），PI-MCs CHF 最高 112 W/cm² 但流阻代价过大
 
 ## Concepts
 
-> 待填充 — 使用 `/ingest` 摄入论文后，概念条目自动出现在此处
+### 主动冷却综述
+
+- [[主动冷却综述/wiki/concepts/浸没冷却]] — 将电子器件直接浸没在介电冷却液中换热的直接冷却技术，按相变分为 SPIC/TPIC，按驱动分浮力/泵/射流
+- [[主动冷却综述/wiki/concepts/浸没冷却液]] — 需同时满足热/电/化学/安全四类要求的介电换热介质，分油基（矿物油/合成油/硅油）和氟碳（HFC/HFE/全氟碳/氢氟烯烃等）两大类
+- [[主动冷却综述/wiki/concepts/电子氟化液]] — 以C-F键为骨架的微通道强制对流/流动沸腾介电冷却工质，介电强度>35 kV，沸点低（HFE-7100: 61°C），两相沸腾散热357-700 W/cm²，瓶颈为低k（0.06-0.15 W/(m·K)）、高成本和沸腾失稳
+- [[主动冷却综述/wiki/concepts/单相浸没冷却]] — 冷却液无相变的浸没冷却方式，分浮力驱动和泵驱动，增强靠被动方法（散热器/布局/流道/射流耦合）
+- [[主动冷却综述/wiki/concepts/两相浸没冷却]] — 利用冷却液相变潜热的浸没冷却方式，COP 比 SPIC 高 72-79%，增强核心在沸腾换热（表面处理/多孔泡沫/气液分离结构）
+- [[主动冷却综述/wiki/concepts/射流浸没冷却]] — 射流冲击与浸没冷却结合的新兴技术，冷却能力四类最高但机理未明、尚处实验室阶段
+- [[主动冷却综述/wiki/concepts/浸没冷却液优值系数]] — 定量比较冷却液热性能的 FOM 指标体系，表达式取决于运行机制（层流/湍流/自然对流/池沸腾/流动沸腾）
+- [[主动冷却综述/wiki/concepts/微通道热沉]] — 由微尺度通道阵列组成的紧凑散热器，散热密度 >1000 W/cm²，四维强化体系（结构/内嵌/表面/材料），含 Kandlikar 通道分类与金刚石终局方案
+- [[主动冷却综述/wiki/concepts/微通道换热器]] — 堆叠微通道箔片经键合形成的紧凑换热器，用于两股流体间热量交换，瓶颈在键合工艺与轴向导热
+- [[主动冷却综述/wiki/concepts/热管冷却]] — 基于相变换热的被动式高效传热装置，等效 $R_{th}$ 仅 0.05–0.4 °C/W，是 CPU/笔记本散热的主流方案
+- [[主动冷却综述/wiki/concepts/热阻模型]] — 一维热阻串联简化分析方法，简洁、准确、灵活，为 MCHS 分析最受推荐的模型
+- [[主动冷却综述/wiki/concepts/纳米流体]] — 纳米颗粒分散于基液的新型冷却工质，$k$ 增强 10–40%、对流 $h$ 增强最高 350%、CHF 可达基液数倍，但机制争议和长期稳定性待解决
+- [[主动冷却综述/wiki/concepts/NSGA-II]] — 第二代非支配排序遗传算法，用于 MCHS 多目标 Pareto 前沿搜索
+- [[主动冷却综述/wiki/concepts/进化算法]] — 受自然选择启发的全局优化方法，2008 年起在 MCHS 优化中取代传统数值工具
+- [[主动冷却综述/wiki/concepts/轴向导热效应]] — 微尺度下热量通过固体壁面沿流动方向的传导，在短通道中不可忽略，材料 $k$ 存在最优值
+- [[主动冷却综述/wiki/concepts/歧管微通道]] — 通过歧管分配冷却工质的微流道系统，核心挑战是流动分配不均（MLD），I 型对称性最优、竖直进口优于水平
+- [[主动冷却综述/wiki/concepts/PEC综合性能因子]] — Webb 提出的 $PEC=(Nu/Nu_0)/(f/f_0)^{1/3}$ 综合性能评价准则，实现热增益与泵功代价的归一化权衡
+- [[主动冷却综述/wiki/concepts/Dean涡]] — 弯曲通道中离心力诱导的反向旋转二次流涡对，波浪形微通道传热强化的核心机制
+- [[主动冷却综述/wiki/concepts/斜翅微通道]] — 主通道间设置一定角度副通道的构型，通过二次流周期打断边界层，Re=300 时增强因子 ~1.6
+- [[主动冷却综述/wiki/concepts/多孔介质微通道]] — 以多孔材料替代实心翅片的构型，滑移效应降低压降 43-47.9%
+- [[主动冷却综述/wiki/concepts/两相流沸腾不稳定性]] — 微通道受限空间中气泡生长引起的流量振荡和流反转现象，reentrant 结构为主要抑制方案
+- [[主动冷却综述/wiki/concepts/表面润湿性]] — 以接触角 $\theta$ 表征的液体在固体表面铺展能力，含 Wenzel/Cassie-Baxter 粗糙表面润湿模型、接触角滞后 CAH 与 Zisman 法则
+- [[主动冷却综述/wiki/concepts/金刚石微通道热沉]] — 以合成金刚石（k=2200 W/m·K）为基板的微通道散热器，可移除>5000 W/cm²，CVD生长速率（<10 μm/h）和CTE失配是核心瓶颈
+- [[主动冷却综述/wiki/concepts/瞬态热管理]] — 面向时变工作负载的热控策略，同时优化 R 和 C 以抑制结温波动
+- [[主动冷却综述/wiki/concepts/热响应时间]] — 单位温变所需时间的瞬态冷却性能统一比较指标
+- [[主动冷却综述/wiki/concepts/热时间常数]] — R-C 乘积决定的系统温度响应速率，需大于功率脉冲周期以抑制波动
+- [[主动冷却综述/wiki/concepts/闪沸冷却]] — 利用液体快速减压触发爆发沸腾的 ms 级瞬态冷却技术
+- [[主动冷却综述/wiki/concepts/相变材料热管理]] — 利用固-液相变潜热缓冲温度波动的瞬态热管理，金属 PCM 响应远快于有机 PCM
+- [[主动冷却综述/wiki/concepts/PCM热沉]] — 将 PCM 填充于金属腔体中、利用固-液相变潜热吸收热量的被动冷却装置，核心设计参数为 $\psi$、$\Phi$、翅片几何与 SPT
+- [[主动冷却综述/wiki/concepts/热导增强体]] — 嵌入 PCM 中以弥补其低导热系数（$k\sim 0.2{-}0.5$ W/(m·K)）的高导热材料，分翅片/纳米颗粒/金属泡沫三类
+- [[主动冷却综述/wiki/concepts/纳米增强相变材料]] — 将高导热纳米结构分散于 PCM 中形成的复合材料，纳米颗粒浓度上限约 2 wt%，黏度增大抑制自然对流是核心工程约束
+- [[主动冷却综述/wiki/concepts/金属泡沫复合PCM]] — 将高孔隙率（$\varepsilon = 0.90{-}0.99$）金属泡沫浸渍于 PCM 中的复合储热结构，$\varepsilon = 0.95$ 优于 0.97，PPI 梯度设计可提升 45% 热性能
+- [[主动冷却综述/wiki/concepts/计算冲刺]] — 利用系统热容缓冲使芯片功率短暂超越 TDP 的运行模式
+- [[主动冷却综述/wiki/concepts/热设计功耗]] — 仅基于 R 的稳态散热设计准则，忽略 C 导致瞬态工况下过度设计
+- [[主动冷却综述/wiki/concepts/变导热管]] — 通过非凝气体被动调节冷凝面积的可变热导热管
+- [[主动冷却综述/wiki/concepts/热开关]] — 按需切换导热路径的主动热控器件，1 Hz 级切换速度
+- [[主动冷却综述/wiki/concepts/PCM品质因数]] — 量化 PCM 散热速率潜力的 FOMq ~ √($k_l$·$L_v$) 指标
+- [[主动冷却综述/wiki/concepts/结温波动]] — 周期性负载下结温的最大-最小差值，与器件失效周数呈对数下降关系
+- [[主动冷却综述/wiki/concepts/主动控制两相微通道冷却]] — 通过实时反馈控制抑制微通道沸腾不稳定性的瞬态两相冷却技术
+- [[主动冷却综述/wiki/concepts/增材制造微通道热沉]] — 利用 SLM/LPBF/DMLS/DLP 等增材制造技术逐层构建的微通道散热器件，核心优势为整体成型复杂三维内部流道，消除界面热阻与泄漏风险
+- [[主动冷却综述/wiki/concepts/增强微通道]] — 按增强机制分为流扰/凹腔/多孔/纳米结构的四类增强微通道分类体系
+- [[主动冷却综述/wiki/concepts/流沸腾增强]] — 通过被动或主动手段提高微通道内两相流沸腾 HTC、降低 ONB 过热度、提升 CHF 的技术总称
+- [[主动冷却综述/wiki/concepts/Ω形凹入微通道]] — Ω 形截面（底部大圆腔+顶部窄槽口）的增强微通道构型，EDM/烧结/3D 打印三路线实现
+- [[主动冷却综述/wiki/concepts/微针肋]] — 微通道内布置的微尺度柱状突起，单相液冷 7 条设计准则（尖角截面/ε=0.5-0.6/交错/G/D=0.8-1.1/TC=15-20%/递增高度/双向阶梯），含 15 种截面几何分类与多孔/Piranha/梯度变体
+- [[主动冷却综述/wiki/concepts/尖端间隙]] — 针肋顶端到盖板的垂直间距（$TC = H_{ch} - H_f$），最优范围为通道高度的 15–25%，TC > 0 时构成开放微通道
+- [[主动冷却综述/wiki/concepts/开放微通道]] — 针肋高度小于通道高度（$TC > 0$）的微通道构型，通过顶端三维流动增强混合和换热，最初为抑制两相流不稳定性提出
+- [[主动冷却综述/wiki/concepts/计算流体动力学]] — 通过 FDM/FEM/FVM 数值求解流体控制方程的仿真方法，微通道研究首选工具
+- [[主动冷却综述/wiki/concepts/格子Boltzmann方法]] — 基于 BGK 碰撞模型的介观流场模拟方法，适合复杂边界和多相流
+- [[主动冷却综述/wiki/concepts/分子动力学模拟]] — 原子/分子尺度的确定论模拟方法，可追踪粒子运动但计算成本极高
+- [[主动冷却综述/wiki/concepts/直接模拟Monte Carlo]] — 通过统计抽样求解 Boltzmann 方程的稀薄气体流动模拟工具
+- [[主动冷却综述/wiki/concepts/Taguchi方法]] — 利用正交实验设计和信噪比分析的统计优化方法
+- [[主动冷却综述/wiki/concepts/人工神经网络]] — 输入层→隐藏层→输出层的机器学习模型，用于预测微通道传热和压降
+- [[主动冷却综述/wiki/concepts/ML辅助热设计]] — 利用深度学习加速散热结构逆向设计的方法论，比传统 CFD 参数扫描快 2700 倍
+- [[主动冷却综述/wiki/concepts/仿生微通道]] — 将自然界高效传热传质结构（叶脉分形/蜂窝/蜘蛛网/鲨鱼皮沟槽/鱼鳞等）的几何原理抽象应用于微通道散热器设计的构型范式，含拓扑/减阻表面/表面改性三大技术路线
+- [[主动冷却综述/wiki/concepts/水凝胶自适应冷却]] — 利用温度敏感性水凝胶在 LCST 附近可逆亲水-疏水相变和体积溶胀/收缩实现按需动态分配冷却液流量的自适应微通道散热技术
+- [[主动冷却综述/wiki/concepts/二次流]] — 由通道几何特征诱导的横向流动分量，通过持续中断边界层和促进流体混合增强传热
+- [[主动冷却综述/wiki/concepts/混沌对流]] — Dean 涡沿流向演化导致的 Lagrangian 流体质点不规则运动，在层流条件下实现近湍流混合效率
+- [[主动冷却综述/wiki/concepts/被动辐射冷却]] — 利用 8–13 μm 大气透明窗口将热量以红外辐射形式排放到外层空间的零能耗冷却技术
+- [[主动冷却综述/wiki/concepts/边界层中断]] — 通过几何特征周期性重置边界层使通道全程维持热发展状态的被动增强策略
+- [[主动冷却综述/wiki/concepts/毛细芯吸]] — 液体在微纳结构中被毛细力自发驱动输送的物理过程，是防止沸腾传热干涸失效的核心机制
+- [[主动冷却综述/wiki/concepts/非互易热辐射]] — 违反 Kirchhoff 定律的方向性热辐射，通过磁光材料/时空调制/拓扑光子晶体实现单向辐射传热
+- [[主动冷却综述/wiki/concepts/分形微通道]] — 基于 Murray 定律和构造理论的自相似分支网络微通道构型，以优异的温度均匀性为主要优势
+- [[主动冷却综述/wiki/concepts/双层微通道]] — Vafai & Zhu 提出的上下两层反向流动微通道构型，通过直接+间接双路径散热改善温度均匀性
+- [[主动冷却综述/wiki/concepts/热整流]] — 热量在某一方向优先传导而反方向受阻的非对称热传导现象，热二极管的核心功能
+- [[主动冷却综述/wiki/concepts/热超材料]] — 通过微纳结构设计实现天然材料不具备的热传导特性的工程复合材料，可实现热隐身/集中/整流等功能
+- [[主动冷却综述/wiki/concepts/热界面材料]] — 填充电子器件固体接触界面微观间隙以降低界面热阻的导热材料，液态金属 TIM 是当前前沿
+- [[主动冷却综述/wiki/concepts/三周期极小曲面]] — 在三个方向均呈周期性的零平均曲率曲面（如 Primitive/I-WP/Gyroid），作为 MCHS 换热芯体结构具有极高比表面积，仅可通过 AM 实现
+- [[主动冷却综述/wiki/concepts/射流冲击冷却]] — 利用高动量流体射流冲击热表面的主动液冷技术，驻点区超薄边界层产生极高局部 $h$，文献最高热流密度 5000 W/cm²
+- [[主动冷却综述/wiki/concepts/润湿性图案化]] — 在单一表面制备空间异质润湿性（超亲水轨道+超疏水背景）以实现无外部泵功的定向液体输运
+- [[主动冷却综述/wiki/concepts/冷却性能指数]] — 衡量主动冷却系统能效的统一指标 $CPI = \dot{Q}_s/\dot{P}_{pump}$，JI 在所有主动冷却技术中 CPI 最高
+- [[主动冷却综述/wiki/concepts/临界热流密度]] — 两相沸腾冷却中核态沸腾阶段的最大热流密度，是 JI 辅助沸腾最重要的设计约束和表面工程优化的核心目标
+- [[主动冷却综述/wiki/concepts/拓扑优化微通道]] — 通过变密度法/水平集法在给定设计域内自动演化最优流道构型的方法，可生成人类工程师难以预见的非常规通道
+- [[主动冷却综述/wiki/concepts/嵌入式微通道冷却]] — 将微流道直接加工在芯片基底内的近结区散热方案，消除 TIM 瓶颈，van Erp 等 (2020) 实现 1700 W/cm²
+- [[主动冷却综述/wiki/concepts/液态金属相变材料]] — 以低熔点金属为工质的固-液相变储热材料，兼具高导热和高体积潜热，用于间歇性高功率瞬态热缓冲
+- [[主动冷却综述/wiki/concepts/液态金属冷却]] — 以低熔点金属（Ga/GaInSn）为工质的散热技术，热导率约为水的 60 倍，可在低压降下实现高换热
+- [[主动冷却综述/wiki/concepts/流动沸腾]] — 冷却工质在通道内流动同时发生液→气相变的换热过程，微通道中四种流型（泡状→弹状→波状→环状），CHF 关联方向存在争议
+- [[主动冷却综述/wiki/concepts/流体力学超材料]] — 通过微纳结构阵列空间分布设计操纵流体流动方向/速度/路径的工程结构，可实现流体二极管/集中器/均匀器
+- [[主动冷却综述/wiki/concepts/靶向热管理]] — 通过微纳结构在热量扩散前将其定向引导至预设散热路径的新范式，区别于传统扩散式冷却
+- [[主动冷却综述/wiki/concepts/弹性湍流传热]] — 粘弹性流体在低 Re 下层流区通过弹性湍流实现传热增强的机制，Whalley 等在蛇形通道中实现 300% 增强
+- [[主动冷却综述/wiki/concepts/压电微泵]] — 利用逆压电效应驱动流体的微型泵，无电磁干扰、易集成、输出脉动流，典型 10×10×1 mm 尺寸，15 mL/min–62 mL/min 流量范围
+- [[主动冷却综述/wiki/concepts/自驱动冷却系统]] — 不依赖外部泵、靠毛细力驱动工质循环的两相换热系统，零功耗但毛细压头上限约 60 kPa
+- [[主动冷却综述/wiki/concepts/泵驱两相冷却]] — 通过机械泵/压电微泵强制循环工质、利用相变潜热散热的高热流密度主动冷却方案
+- [[主动冷却综述/wiki/concepts/环路热管]] — 补偿腔紧邻蒸发器且有强热耦合的毛细驱动两相回路，具备长距离传热和反重力运行能力
+- [[主动冷却综述/wiki/concepts/毛细泵回路]] — 储液器与蒸发器分离、热隔离的毛细驱动两相回路，温度控制精度优于 LHP
+- [[主动冷却综述/wiki/concepts/逆流歧管微通道]] — 在 Z 型歧管微通道中引入逆流构型，三方面同时改善：温度、压降和流量均匀性，标杆性能 1100 W/cm²（单相, 22 kPa）
+- [[主动冷却综述/wiki/concepts/均温板]] — 基于工质蒸发-冷凝相变的被动式平板两相传热器件，有效导热系数 $10^3$–$10^4$ W/(m·K)，热阻最低 0.034 K/W，用于消除局部热点
+- [[主动冷却综述/wiki/concepts/喷雾冷却]] — 通过喷嘴将冷却剂雾化为微细液滴阵列喷射至热表面的主动冷却技术，热流移除 >400 W/cm²，以液滴撞击/液膜蒸发/核态沸腾协同实现极高换热率
+- [[主动冷却综述/wiki/concepts/封装相变材料]] — 将 PCM 包裹在聚合物壳层中的微米级核-壳结构颗粒，解决纯 PCM 的液态泄漏/体积膨胀/化学不相容三大问题，可制备为潜热型功能流体泵送循环
+- [[主动冷却综述/wiki/concepts/超声波辅助冷却]] — 利用压电换能器产生声流效应强化对流换热的非接触式主动增强技术，PEC 可达 1.38，但高功耗和材料空蚀风险是主要挑战
+
+### 系统级微流道
+
+- [[系统级微流道/wiki/concepts/Pin-Fin 液冷结构]] — 通过底板表面密集圆柱形金属针柱产生扰流效应的直接液冷散热结构，当前车规级 SiC 模块最广泛方案
+- [[系统级微流道/wiki/concepts/单面直接液冷]] — 将底板与散热结构一体化集成、消除 TIM 的冷却技术，结流热阻降至间接方案的 75%
+- [[系统级微流道/wiki/concepts/结流热阻]] — $R_{thjf}=(T_{j,max}-T_{in})/P_{loss}$，衡量功率模块从芯片至冷却工质整条热路径传热阻力的核心指标
+- [[系统级微流道/wiki/concepts/电热联合仿真]] — 电路-损耗-热网络三模型闭环迭代至稳态的仿真方法，捕获 SiC MOSFET 损耗与结温的正温度系数正反馈
+- [[系统级微流道/wiki/concepts/导流块]] — 放置在微通道内部横跨截面的实体阻塞结构，通过压缩局部流通面积重新分配冷却液流向
+- [[系统级微流道/wiki/concepts/多馈给激光加工]] — 通过逐级将激光焦平面沿深度方向进给来实现大深度微结构可控制备的激光加工策略，核心是将目标总深度分解为多个进给步逐层去除材料
+- [[系统级微流道/wiki/concepts/微通道散热器]] — 利用微米至毫米级流道通过尺度效应实现高换热系数的散热装置，核心矛盾是换热强化与流阻降低的权衡
+- [[系统级微流道/wiki/concepts/热微压印]] — 基于金属高温塑性变形的微结构成形工艺，W模具+热铜压印实现低成本批量微通道制造
+- [[系统级微流道/wiki/concepts/热阻网络法]] — 将散热系统离散为串联/并联热阻单元的分析方法；**热阻三分法**分离"材料/界面/工质瓶颈"；**1D归一化对标法**(Sahu 2025)使不同工质/方案可在同一基准下公平对比
+- [[系统级微流道/wiki/concepts/鲨鱼皮仿生微结构]] — 从鲨鱼皮肋条结构获得灵感的减阻微结构设计，分流间隙+驼峰轮廓降低压力阻力
+- [[系统级微流道/wiki/concepts/熵产最小化]] — 基于热力学第二定律的多目标优化方法，分解传热不可逆 $S_t$ 和摩擦不可逆 $S_f$ 识别不同工况的主导损失
+- [[系统级微流道/wiki/concepts/凹入腔]] — 口部直径小于内部直径的表面空腔结构，高效气泡成核位点，通过优先成核+稳定捕获+毛细补液三重机制强化池沸腾并延迟 CHF
+- [[系统级微流道/wiki/concepts/池沸腾]] — 被动两相散热技术，利用相变潜热带走热量，核心指标为沸腾曲线和 CHF
+- [[系统级微流道/wiki/concepts/临界热流密度]] — 两相散热系统核态沸腾与膜态沸腾之间的热流密度上限（boiling crisis），是两相冷却安全运行上限
+- [[系统级微流道/wiki/concepts/双层微通道]] — 两层微通道堆叠构型，上下层导热耦合降低壁温
+- [[系统级微流道/wiki/concepts/歧管微通道]] — 歧管层分配流量+主换热层换热的解耦构型，缩短有效流道长度降低压降
+- [[系统级微流道/wiki/concepts/微柱阵列扰流结构]] — 微通道内微米级柱状突起阵列，通过边界层中断+二次流+尾流涡脱落增强换热；腰形针翅引入变截面双机制（流动加速+流向涡诱导）；穿孔针翅引入射流注入机制（$Nu$ +48% + $\Delta P$ −12%）
+- [[系统级微流道/wiki/concepts/侧壁凸块微通道]] — 弧形/锯齿侧壁+凸块（扇形/菱形）+分支-二次通道汇合碰撞的扰流构型，分叉加速→碰撞混合→涡流→边界层破坏的双重机制链，MCSB PEC=1.38–1.63
+- [[系统级微流道/wiki/concepts/径向歧管微通道]] — 同轴环形弯曲歧管替代传统直线歧管，Dean涡诱导旋流增强近壁混合；RMM弯曲半径+喷嘴位置双参数调控，TPI最高提升14%、完整热沉压降降19.73%
+- [[系统级微流道/wiki/concepts/倾斜翅片微通道]] — 通道内放置倾斜平行四边形翅片作为节流+流向偏转元件的微通道构型，与 OMC 的斜向次级通道横流机制有本质区别
+- [[系统级微流道/wiki/concepts/嵌入冷却]] — 微流道嵌入芯片衬底/封装基板/独立中介层的近结冷却方案，消除TIM热阻瓶颈
+- [[系统级微流道/wiki/concepts/激光微加工]] — 利用聚焦激光束进行微米级切割/雕刻/钻孔的非接触式免掩模制造方法，适用于 Si、玻璃、陶瓷等脆性材料
+- [[系统级微流道/wiki/concepts/物理信息机器学习]] — 将物理定律（守恒律、对称性、边界条件）显式嵌入 ML 架构或损失函数的方法论
+- [[系统级微流道/wiki/concepts/数据驱动降阶模型]] — 从高保真 CFD/实验数据中提取低维动力学模型的方法谱系（POD→DMD→深度自编码器）
+- [[系统级微流道/wiki/concepts/斜向鳍微通道]] — 翅片周期性斜向间断形成次级流道的微通道构型，OMC(45$^\circ$)优于AOMC(60$^\circ$)
+- [[系统级微流道/wiki/concepts/Dean涡强化换热]] — 弯曲通道中离心力诱导的横截面反向旋转二次流涡对，通过减薄热边界层和增强冷热流体混合强化换热，强度由 Dean 数 $De=Re\cdot\sqrt{D_h/R_c}$ 表征
+- [[系统级微流道/wiki/concepts/EMAT-SC]] — 翼型腔扰流子+二次通道嵌入式微通道结构，四个几何功能模块解耦设计，$\alpha$=0.47, $\beta$=0.28–0.56 时 PEC 达 1.50
+- [[系统级微流道/wiki/concepts/GaN HEMT 自热效应]] — 2DEG 沟道焦耳热（$H = \vec{J} \cdot \vec{E}$）导致饱和漏电流衰减的器件物理现象，嵌入式冷却可完全消除自热并使饱和电流提升 19.5%
+- [[系统级微流道/wiki/concepts/2.5D 集成微通道直冷]] — 将微通道嵌入独立中介层、器件背面直接键合到微通道开口的冷却架构，器件工艺与微通道工艺解耦
+- [[系统级微流道/wiki/concepts/2.5-D 中介层封装]] — Logic + HBM 多芯片通过微凸块键合到同一硅中介层（含 TSV）的先进封装架构，去盖设计引入散热与结构保护的双重挑战
+- [[系统级微流道/wiki/concepts/4 层阶梯微通道]] — 通过 Si-Si 直接键合形成的多层微通道，截面逐层渐变扩展以降低垂直方向流动压降
+- [[系统级微流道/wiki/concepts/高阻硅中介层]] — 同时承担微通道散热、TSV 电气互连和异质芯片共集成的三合一 2.5D 集成载体
+- [[系统级微流道/wiki/concepts/进出口限流器]] — 位于微通道散热器进出口区域的被动流控结构，Tesla 阀限流器通过流体二极管效应选择性阻断蒸汽逆流而不牺牲正向供液
+- [[系统级微流道/wiki/concepts/近结热管理]] — 将散热结构集成在距热源 <500 $\mu$m 内的热管理策略；半导体衬底嵌入式、金刚石基底直接冷却、2.5D 中介层近结冷却三条路径
+- [[系统级微流道/wiki/concepts/金刚石微通道热沉]] — 以金刚石为基底材料的微通道散热器，$k \approx 1000{-}2000\ \mathrm{W/(m \cdot K)}$；复合针翅方案达 7300 W/cm$^2$，金刚石+MMC 方案达 4099 W/cm² 背景+73.5 kW/cm² 热点
+- [[系统级微流道/wiki/concepts/金属盖兼容歧管]] — 3D 打印金属（SS 316L）紧凑型射流歧管，交替喷孔/排孔+盖板机械压紧密封，为去盖 2.5-D 封装同时提供散热和结构刚性
+- [[系统级微流道/wiki/concepts/多层微通道冷板]] — 将冷却液分配功能(M2层)与对流换热功能(MC+M1层)分离的大面积液冷架构，通过功能解耦扩展至>100 cm$^2$芯片均匀散热
+- [[系统级微流道/wiki/concepts/Tesla阀通道]] — 非对称主流-旁通支路排布的被动阀式流道，具有流体二极管行为
+- [[系统级微流道/wiki/concepts/四分区微通道热沉]] — 基于Constructal理论的四对称分区+多级分叉MCHS构型，分区供液+通道收缩维持沿程均匀换热
+- [[系统级微流道/wiki/concepts/各向异性梯度多孔翅片]] — 将方向性渗透率各向异性与空间梯度 Darcy 数组合应用于微通道翅片的新型热管理设计范式，步降渗透率构型热阻降低 76.84%
+- [[系统级微流道/wiki/concepts/各向异性热界面材料]] — 面内高导热($K_{xy}$数百-数千W/mK)远大于面外($K_z$)的碳基TIM，利用热路由消除局部热点
+- [[系统级微流道/wiki/concepts/热路由]] — 利用各向异性材料将热量优先沿面内方向扩展至大面积区域以消除局部热点的热管理策略
+- [[系统级微流道/wiki/concepts/Constructal理论]] — Bejan提出的物理学定律：有限尺寸流动系统的构型演化方向是使其流动获得更通畅路径
+- [[系统级微流道/wiki/concepts/CPcCPU]] — 将微通道冷板与商用 CPU 封装完整耦合的数值建模方法，保留全部封装层热阻路径以准确评估冷板实际散热能力
+- [[系统级微流道/wiki/concepts/综合性能因子]] — 无量纲换热-流阻综合指标 $PEC = (Nu/Nu_0) \cdot (f/f_0)^{-1/3}$；变体 Goodness factor $\phi = Nu/(f \cdot Re)$ 无基准依赖；TPI $=(\overline{q}_C/\overline{q}_S)/(\Delta P_C/\Delta P_S)^{1/2}$ 适用歧管无基准比较
+- [[系统级微流道/wiki/concepts/温度均匀性]] — 衡量热源面温度分布均匀程度的性能指标，$Re$ 是主导因素
+- [[系统级微流道/wiki/concepts/流动沸腾]] — 工质在强制对流驱动下发生相变的换热模式，利用汽化潜热提供远高于单相对流的换热系数
+- [[系统级微流道/wiki/concepts/激光透射焊接]] — 激光透过透明材料被下层吸收体吸收、在界面局部产热实现键合的封装工艺
+- [[系统级微流道/wiki/concepts/超亲水表面]] — 水接触角~0$^\circ$的固体表面，激光烧蚀Si通过物理毛细+化学SiO$_2$双机制产生，快速再润湿延迟CHF
+- [[系统级微流道/wiki/concepts/起始核态沸腾]] — ONB，液体冷却中壁面首次出现气泡成核的临界点，单相到两相换热的转折，以压降曲线最低点为判据
+- [[系统级微流道/wiki/concepts/会聚-发散微通道]] — 沿流向截面宽度渐变的微通道构型，利用最窄处局部换热增强实现热点定向冷却
+- [[系统级微流道/wiki/concepts/火积理论]] — 描述物体传热能力的物理量，火积耗散率 EDR 反映系统平均传热温差，与熵产率互补的传热优化目标
+- [[系统级微流道/wiki/concepts/箭头形内翅片]] — 嵌入微通道中央轴线的三角形截面扰流元件，以固定总体积下增大比表面积，首次纳入构形设计框架
+- [[系统级微流道/wiki/concepts/沟槽-肋复合微通道]] — 微通道侧壁周期性凹入沟槽+凸出肋组合扰流结构，通过边界层中断+喷射效应+涡流混合三重机制强化换热，梯形最优
+- [[系统级微流道/wiki/concepts/Omega涡识别法]] — 旋转涡量与总涡量之比 $\Omega=0.52$ 为普适判据的第三代涡识别方法，克服前代阈值选择问题
+- [[系统级微流道/wiki/concepts/R1233zd(E)]] — 氢氟烯烃类介电制冷剂，$T_{sat}=37.5\ \mathrm{°C}$，电绝缘特性使直接芯片两相冷却成为可能，但热物性低于水导致热阻高约一个量级
+- [[系统级微流道/wiki/concepts/场协同原理]] — 通过速度矢量与温度梯度协同程度评价对流换热效率的理论框架，场协同数 $F_c = Nu/(Re \cdot Pr)$；局部 $\alpha$/$\beta$ 角分布云图可替代全局平均 $F_c$ 做精细诊断
+- [[系统级微流道/wiki/concepts/微射流阵列冷却]] — 通过密集微米级喷嘴射流冲击热源表面的嵌入式冷却方案，滞止区 HTC 极高但远离后快速衰减
+- [[系统级微流道/wiki/concepts/纳米流体]] — 液态连续相+纳米固态分散相的多相悬浮冷却介质，通过纳米颗粒高导热系数增强对流换热，核心挑战为稳定性控制
+- [[系统级微流道/wiki/concepts/综合散热性能系数]] — COP = $P_{extract}/P_{pump}$，衡量散热器能效的指标，与 PEC 互补（COP 评绝对能效，PEC 评相对强化比）
+- [[系统级微流道/wiki/concepts/仿生微通道拓扑]] — 以叶脉/蜘蛛网/蜂窝等自然界流体分配网络为模板的微通道构型设计，可同时改善温均性和流阻
+- [[系统级微流道/wiki/concepts/热耦合]] — 多热源器件中热量通过衬底横向传导至相邻器件导致彼此温度抬升的现象，嵌入式冷却可在间距超过临界值时完全消除
+- [[系统级微流道/wiki/concepts/中断微通道]] — 通过沿程空腔周期性打断连续通道实现边界层再发展和相邻通道横向掺混的微通道构型，分顺排和交错两种排列
+- [[系统级微流道/wiki/concepts/两相射流冲击冷却]] — 结合射流冲击与工质相变潜热的冷却方案，各流量沸腾曲线在两相区合并为单一曲线，CHF 由射流速度唯一决定
+- [[系统级微流道/wiki/concepts/核态沸腾退化起始点]] — ODNB，两相射流冲击沸腾曲线在 CHF 之前的退化拐点：蒸汽开始部分干扰补液，$h$ 达峰值后下降
+- [[系统级微流道/wiki/concepts/锯齿侧壁微通道]] — 流道侧壁周期性三角形凹槽构型，通过锯齿凹槽内被动回流涡减薄边界层增强对流换热，零额外泵功代价
+- [[系统级微流道/wiki/concepts/尾流区混合]] — 穿孔射流或涡诱导结构破坏柱/肋后方低流速回流死区以增强局部对流换热的流场调控机制，可同时提升换热并降低压降
+- [[系统级微流道/wiki/concepts/微EDM钻孔]] — 利用微细电极脉冲放电火花蚀除材料在微尺度加工通孔的非接触式微加工技术，可用于在金属微柱翅上加工亚毫米贯穿孔
+- [[系统级微流道/wiki/concepts/底壁腔体结构]] — 歧管微通道底壁上的周期性凹腔阵列(SBW/SWBW/WBW/ZBW/RTBW1/RTBW2)，通过涡旋破坏热边界层增强换热
+- [[系统级微流道/wiki/concepts/二次通道]] — 连接相邻微通道主通道的横向分支通道，通过无因次参数 $\alpha$ 定量调控分流比，与翼型腔扰流子配合可实现可控增强
+- [[系统级微流道/wiki/concepts/速度不均匀因子]] — $\omega = u_{std}/u_{avg}$，量化歧管各通道间流量分配均匀性的无量纲指标，$\omega$ 越小流均性越好
+- [[系统级微流道/wiki/concepts/电镀键合]] — 利用纯铜电镀在室温下将金属微通道与陶瓷基板一体化连接的制造工艺，同时实现机械固定和热传导，消除TIM界面
+- [[系统级微流道/wiki/concepts/肋片微通道]] — 微通道侧壁周期性排布凸出肋片的扰流增强构型，通过截面缩扩+下游涡流周期性打断边界层，椭圆肋形阻最小、综合性能最优
+- [[系统级微流道/wiki/concepts/MPCPU]] — 以芯片结温 85°C 为约束的 CPU 最大容许功率，替代传统"固定热流-看温升"的工程评估指标
+- [[系统级微流道/wiki/concepts/间歇脉动流]] — 梯形波速度剖面的非稳态流动控制策略，通过能量缓冲（动量保持）和热夹带（边界层周期性破坏）两种机理增强传热，最优St与通道几何特征尺寸匹配
+- [[系统级微流道/wiki/concepts/逆流歧管微通道]] — CFMMC：通过四进四出歧管+分流板交错孔实现相邻通道局部逆流的歧管微通道构型，同时改善流均性、压降和温均性
+- [[系统级微流道/wiki/concepts/逆流微通道]] — 相邻通道内工质反向流动的微通道构型，通过横向换热使上游冷流体冷却下游高温两相流体，消除下游干涸和回流
+- [[系统级微流道/wiki/concepts/回流现象]] — 微通道流动沸腾中大气泡/气塞占据通道截面导致逆流运动的两相不稳定性，引起流量振荡和局部干涸
+- [[系统级微流道/wiki/concepts/两相流型]] — 微通道内气液两相流的空间分布形态（泡状→弹状→搅混→环状流），流型决定液膜热阻和换热机制
+- [[系统级微流道/wiki/concepts/蒸气干度]] — 两相冷却工质出口处气相质量分数，衡量潜热利用程度，越高→越省泵功，过高→干涸风险
+- [[系统级微流道/wiki/concepts/正弦波壁微通道]] — 壁面沿流向呈正弦波形变化的微通道构型，通过增面+波谷核化+垂直速度分量破坏热边界层三重机制强化换热
+- [[系统级微流道/wiki/concepts/直接芯片冷却]] — 冷却液通过外部歧管直接接触裸 die 表面、消除 TIM 的热管理架构，需介电质工质保证电绝缘，与嵌入冷却（流道在衬底内）互补
+- [[系统级微流道/wiki/concepts/拓扑优化冷板]] — 通过变密度法/水平集法等 TO 方法在设计域内自动演化出自由形态流道的液冷冷板
+- [[系统级微流道/wiki/concepts/Darcy 插值模型]] — 变密度法 TO 中控制多孔介质逆渗透率随设计变量连续变化的插值函数，同时插值 $\alpha$、$k$、$\rho$、$c_p$
+- [[系统级微流道/wiki/concepts/Helmholtz 滤波与投影]] — 基于 PDE 的密度滤波 + 双曲正切投影两步组合，消除 TO 数值不稳定性和中间密度单元
+- [[系统级微流道/wiki/concepts/集成微通道-拓扑优化设计]] — 将 TO 自由形态流道与规则直微通道通过布尔运算融合的混合冷板方案，功能解耦实现热-流协同优化
+- [[系统级微流道/wiki/concepts/响应面法关联建模]] — 基于 Latin Hypercube 采样 + 参数化仿真 + 二阶多项式拟合的代理模型方法，用于 $T_{max}$ 快速热预测
+- [[系统级微流道/wiki/concepts/PCM耦合微通道散热]] — 将PCM嵌入微通道散热器中的跨时间尺度热管理策略，利用PCM固-液相变吸收毫秒级脉冲冲击、再通过微通道对流缓慢释放
+- [[系统级微流道/wiki/concepts/三明治冷却结构]] — 将冷却板置于热源之间的面间冷却排布方式，使每个热源前后两面同时被冷却
+- [[系统级微流道/wiki/concepts/平行通道冷板]] — 最基本的直通道冷板构型，冷却液从入口集管经平行直通道流向出口集管，分支入口处涡流滞止是其热弱区
+- [[系统级微流道/wiki/concepts/入口段效应]] — 流体进入通道后热边界层从零发展的区段内局部换热系数显著高于充分发展段的物理现象，歧管微通道通过多段分流反复利用此效应
+- [[系统级微流道/wiki/concepts/滑移效应]] — 流体在固体壁面处存在非零切向速度的现象，通过降低壁面速度梯度减少流动阻力，是超疏水表面和多孔介质表面降阻的核心物理机制
+- [[系统级微流道/wiki/concepts/超疏水表面]] — 接触角>150°的表面，微纳复合粗糙结构捕获气层产生滑移效应降低流阻，流动阻力最多可减少约40%
+- [[系统级微流道/wiki/concepts/多保真拓扑优化]] — 低保真 TO 批量生成候选 + VAE 潜空间进化 + 高保真 CFD 验证选优的两级优化策略，将进化算法搜索与 TO 几何生成融合
+- [[系统级微流道/wiki/concepts/多孔介质微通道]] — 将多孔材料集成到微通道壁面/肋片中的复合散热结构，通过增面+滑移效应降阻+增强混合三重协同强化
+- [[系统级微流道/wiki/concepts/分区协同冷却]] — 背景区矩形微通道+热点区扰流结构的差异化散热策略，背景热低流阻输送+热点热强力压制
+- [[系统级微流道/wiki/concepts/花瓣形柱鳍]] — 受花瓣多级分叉曲面启发的仿生柱鳍几何，通过诱导定向涡流增强局部换热，N=6 瓣最优
+- [[系统级微流道/wiki/concepts/间接液冷]] — 冷却工质在封闭换热器内流动、通过 TIM 与被冷却对象热耦合、工质与对象无直接接触的热管理架构，避免泄漏电气短路风险但多一层 TIM 界面热阻
+- [[系统级微流道/wiki/concepts/直接到封装冷却]] — 将微流道嵌入封装基板（而非芯片衬底）的 D2P 热管理架构，介于远程热沉和 D2C 之间——热路径短于热沉、制造简于 D2C
+- [[系统级微流道/wiki/concepts/阵列肋微射流热沉]] — 将射流冲击与微通道耦合并在冲击面布置阵列化肋片的混合式微尺度散热器，肋几何通过控制涡结构范式独立调控传热与流阻
+- [[系统级微流道/wiki/concepts/有效全局努塞尔数]] — $Nu_{eff-G} = h_{eff-G} \cdot D_H / k_f$，以芯片总面积归一化的系统级无量纲换热性能指标，与局部 Nu 互补——评价整个封装的总体散热能力
+- [[系统级微流道/wiki/concepts/T-MCHS]] — 将 TSV 铜柱嵌入 2.5D 封装硅中介层微通道壁面的散热结构，TSV 同时承担电互连与换热增强双重功能
+- [[系统级微流道/wiki/concepts/ANN 代理模型优化]] — 用前馈 ANN 学习"几何参数→稳态性能输出"的静态非线性映射以替代 FEM/CFD 仿真，嵌入 NSGA-II 等优化循环实现加速设计
+- [[系统级微流道/wiki/concepts/金刚石-Cu复合材料]] — 以金刚石颗粒为增强相、铜为基体的金属基复合材料，界面工程是实现高导热的关键使能技术
+- [[系统级微流道/wiki/concepts/金刚石表面金属化]] — 在金刚石表面沉积W/Ti/Cr/Mo等涂层并退火生成碳化物过渡层的界面工程策略，解决金刚石-金属声子谱失配
+- [[系统级微流道/wiki/concepts/主动金属钎焊]] — 使用含活性元素（Ti/Zr/Hf）钎料在真空下连接异质材料的焊接工艺，可润湿传统钎料无法润湿的非金属表面
+- [[系统级微流道/wiki/concepts/Strip-fin 迷你通道]] — 迷你通道内交替排列条形翅片的扰流增强散热结构，低流速下热性能优于直通道和 pin-fin，热滞后最小
+- [[系统级微流道/wiki/concepts/瞬态热响应]] — 微通道散热器在时变热载荷下的动态热行为，核心指标为时间常数 $\tau$，频率不影响平均温度、仅流速决定响应速度
+- [[系统级微流道/wiki/concepts/分布式入口喷嘴出口槽冷板]] — DINOS-CP：以汇聚入口喷嘴阵列+发散出口槽+微柱翅替代传统连续长微通道，通过缩短有效流道长度同时降低热阻和压降
+- [[系统级微流道/wiki/concepts/分流板（微流道）]] — 插入歧管层与微通道层之间的薄片组件（0.4 mm 厚，80 个交错孔），用于二次流量均匀分配和局部逆流定向
+- [[系统级微流道/wiki/concepts/电化学增材制造]] — ECAM：基于电沉积的金属 3D 打印，33μm 体素、99.95% 纯 Cu、Ra<1.3μm，适合制造冷板内部精细流道特征
+- [[系统级微流道/wiki/concepts/热界面材料]] — 填充热源与散热器间微观间隙的导热介质，grease 型 vs 软金属型的热导率差异可使热阻差 11%
+- [[系统级微流道/wiki/concepts/薄膜加热器模拟法]] — 在衬底表面制备金属薄膜电阻加热器模拟器件有源区功耗以独立评估冷却结构散热上界的测试方法，消除异质界面TBR对性能评估的干扰
+- [[系统级微流道/wiki/concepts/伴随形状优化]] — 基于离散伴随方程计算目标函数对所有网格节点梯度的 CFD 高维形状优化方法，计算量与设计变量数无关，产出光滑可制造几何
+- [[系统级微流道/wiki/concepts/热测试载体]] — 用可控铂陶瓷加热器堆叠配置模拟多芯片模块热行为的实验平台，上层发热、下层兼作集成温度传感器
+- [[系统级微流道/wiki/concepts/光滑互联微通道]] — SI-MCs，在歧管微通道框架下于相邻光滑直通道间引入横向连接通道的拓扑，通过流动再分布和侧向膨胀缓解高热流干涸
+- [[系统级微流道/wiki/concepts/多孔互联微通道]] — PI-MCs，铜粉烧结多孔结构+互联通道的复合歧管微通道拓扑，丰富成核位点使 CHF 最高但流阻代价大，HTC 曲线呈"双峰"
+- [[系统级微流道/wiki/concepts/R134a]] — 氢氟碳化物制冷剂 CF₃CH₂F，低沸点使其在 <20°C 壁过热度下即可触发 ONB，适用于电子器件两相冷却但 GWP 高
 
 ## Methods
 
-> 待填充 — 使用 `/ingest` 摄入论文后，方法条目自动出现在此处
+### 系统级微流道
+
+- [[系统级微流道/wiki/methods/X射线计算机断层扫描]] — 以非破坏方式获取微通道截面形貌和深度轮廓的三维信息，验证微加工工艺的几何精度
+- [[系统级微流道/wiki/methods/激光共聚焦扫描显微镜]] — 微通道三维形貌和深度轮廓的光学表征
+- [[系统级微流道/wiki/methods/扫描电子显微镜]] — 微通道侧壁微观形貌、截面轮廓和工艺缺陷检测
+- [[系统级微流道/wiki/methods/P-E犁削挤压工艺]] — 机械式微结构成形工艺，楔形刀具犁削→挤压→翻起塑性变形，正交 P/E 自发形成凹入腔，低成本无切屑
+- [[系统级微流道/wiki/methods/非接触红外测温]] — 微通道热沉/芯片表面温度的二维非接触测量
+- [[系统级微流道/wiki/methods/X射线光电子能谱]] — 材料表面元素组成和化学态分析（~1–10 nm 深度）
+- [[系统级微流道/wiki/methods/接触角测量]] — 液滴法测量固体表面静态接触角，量化亲水/疏水性
+- [[系统级微流道/wiki/methods/多指标综合评估框架]] — TP + $S/S_0$ + 温度均匀性三角评估方法论，避免单指标优化的盲区
+- [[系统级微流道/wiki/methods/ANSYS FLUENT CFD 仿真]] — 基于有限体积法的流-固共轭传热数值模拟，获取流场温度场空间分布，用于微通道散热方案的热-流性能评估
 
 ## Syntheses
 
-> 待填充 — 使用 `/query` 检索并固化高价值内容后，综合条目自动出现在此处
+> 位于 vault 根 `syntheses/`，跨子库综合分析、对比研究、领域综述。使用 `/query` 检索并固化高价值内容后，条目自动出现在此处。
 
 ## 元信息
 
 - [[研究日志/index|研究日志]] — 统一研究日志（按月分文件）
 - [[log|全局操作日志]] — 全局操作日志
 - [[研究纲领]] — 跨子库统一研究纲领
+- [[_子库模板]] — 新建子库模板

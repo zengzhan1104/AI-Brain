@@ -88,6 +88,7 @@ Knowledge/
 ├── index.md                     ← 全库统一索引
 ├── log.md                       ← 全局操作日志
 ├── _子库模板/                   ← 新建子库模板
+├── syntheses/                    ← 跨子库综合分析
 ├── 研究日志/                    ← 按月研究日志
 ├── .claude/skills/              ← 7 个自定义 skill
 └── {你的子库}/
@@ -97,8 +98,7 @@ Knowledge/
     ├── wiki/                    ← 编译输出
     │   ├── concepts/            ← 概念页
     │   ├── methods/             ← 测试/表征方法
-    │   ├── sources/             ← 论文精读
-    │   └── syntheses/           ← 跨文献综合
+    │   └── sources/             ← 论文精读
     └── assets/                  ← 图片与媒体
 ```
 

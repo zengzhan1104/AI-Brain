@@ -111,8 +111,7 @@ grep -rn '{{.*}}' "E:/Knowledge/${SUB}/" 2>/dev/null
   │   ├── log.md
   │   ├── concepts/
   │   ├── methods/
-  │   ├── sources/
-  │   └── syntheses/
+  │   └── sources/
   └── assets/
 
 下一步：
